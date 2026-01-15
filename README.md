@@ -90,7 +90,7 @@
 
 ## 🔑 잠재고객 판단 기준
 
-- **분석 로직**: $$Delta\_Value = \sum Second\_Half - \sum First\_Half$$
+- **분석 로직**: $$DeltaValue = \sum SecondHalf - \sum FirstHalf$$
 
 - 고객 1명의 2023 3Q ~ 2024 2Q 결제금액 총합 - 2024 3Q ~ 2025 2Q 결제금액 총합
 - Delta_Value > 0 인경우 소비량 증가 추세 ⬆ => 잠재고객✅
