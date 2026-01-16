@@ -87,9 +87,16 @@ graph LR
 - **분석 로직**: $$DeltaValue = \sum SecondHalf - \sum FirstHalf$$
 
 - 고객 1명의 2023 3Q ~ 2024 2Q 결제금액 총합 - 2024 3Q ~ 2025 2Q 결제금액 총합
-- Delta_Value > 0 인경우 소비량 증가 추세 ⬆ => 잠재고객✅
-- Delta_Value < 0 인경우 소비량 감소 추세 ⬇
-- Delta_Value = 0 인경우 소비량 일정 -> 소비 성향 고정 -> 제외❌
+
+| Delta_Value 조건 | 해석 | 분류 |
+|---|---|---|
+| Delta_Value > 0 | 소비량 **증가 추세** ⬆ | ✅ 잠재고객 |
+| Delta_Value < 0 | 소비량 **감소 추세** ⬇ | ❌ 제외 |
+| Delta_Value = 0 | 소비량 **변화 없음** → 소비 성향 고정 | ❌ 제외 |
+
+
+
+
 
 ## 🎯 목적
 
